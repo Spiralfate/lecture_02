@@ -5,7 +5,17 @@ EPAM
 
 Установка:
 
-1. cd <Директория с Dockerfile'ом>
+1. Переходим в рабочую директорию
 
-2. docker build -t='server_nginx' . && docker run -d -p 30000:80 server_nginx
+  cd <Директория с Dockerfile'ом>
+
+2. Установка образа и запуск контейнера одной командой
+
+  docker build -t='server_nginx' . && docker run -d -p 30000:80 server_nginx
+
+3. Убеждаемся, что контейнер работает
+
+  docker ps
+  
+4. Заходим на localhost:30000 и видим приветственную страницу Nginx.
 
